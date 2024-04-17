@@ -1,0 +1,11 @@
+{
+  "name": "lisk101",
+  "version": "1.0.0",
+  "description": "lisk101 tutorial a simple restful api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ronex @ronexondimu - twitter",
+  "license": "ISC"
+}
