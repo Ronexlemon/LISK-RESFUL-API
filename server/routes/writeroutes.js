@@ -8,7 +8,7 @@ require('dotenv').config({path:".env"})
 
 const router = express.Router();
 
-//addItem(string memory _itemName,string memory _itemCategory,uint256 _itemId,uint256 _itemPrice)
+
 router.post("/addItems",async(req,res)=>{
     const {_itemName,_itemCategory,_itemId,_itemPrice}= req.body
 try{
