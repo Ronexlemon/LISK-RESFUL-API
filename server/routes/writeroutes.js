@@ -36,4 +36,18 @@ try{
 }
 
 })
+
+router.post("/bidItem",async(req,res)=>{
+    const {_index}= req.body
+try{
+    const tx = await contractWithSigner.bidItem(_index);
+   await  tx.wait();
+    
+    res.status(200).json({ data: tx.hash, msg: "success item bid" });
+
+}catch(error){
+    return res.status(501).json({message:"error fetching from server"})
+}
+
+})
 module.exports = router
